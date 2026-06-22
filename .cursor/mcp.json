@@ -1,30 +1,19 @@
 {
   "mcpServers": {
-    "github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": {
-        "Authorization": "Bearer ${env:CURSOR_GITHUB_TOKEN}"
+    {
+  "mcpServers": {
+       "allure": {
+      "command": "C:\\Users\\iatoruba\\.local\\bin\\uvx.exe",
+      "args": [
+        "--from",
+        "allure-testops-mcp",
+        "allure-testops-mcp"
+      ],
+      "env": {
+        "ALLURE_URL": "https://allure-test.services.mts.ru",
+        "ALLURE_TOKEN": "e6912ed0-bdbd-4b0c-ab82-cdbc6bab764f",
+        "ALLURE_SSL_VERIFY": "false",
+        "ALLURE_ENABLE_WRITE": "true"
       }
-    },
-    "gitlab": {
-      "type": "http",
-      "url": "https://gitlab.com/api/v4/mcp"
-    },
-    "grafana-cloud": {
-      "type": "http",
-      "url": "https://mcp.grafana.com/mcp"
-    },
-    "atlassian": {
-      "type": "http",
-      "url": "https://mcp.atlassian.com/v1/mcp"
-    },
-    "postman": {
-      "type": "http",
-      "url": "https://mcp.postman.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${env:POSTMAN_API_KEY}"
-      }
-    }
-  }
+    } 
 }
